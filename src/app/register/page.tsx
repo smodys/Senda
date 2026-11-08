@@ -1,6 +1,7 @@
 
 "use client";
-import { useState } from "react";
+import Link from "next/link";
+import {useState} from "react";
 export default function RegisterPage() {
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
@@ -44,11 +45,7 @@ export default function RegisterPage() {
                             Nombre
                         </label>
                         <input
-                            required
-                            onChange={(e) => setNombre(e.target.value)}
-                            value={nombre}
-                            id="nombre"
-                            type="text"
+                            required onChange={(e) => setNombre(e.target.value)} value={nombre} id="nombre" type="text"
                             className="w-full rounded-lg border border-[#DDE7DF] px-4 py-3 outline-none focus:border-[#286B50] focus:ring-2 focus:ring-[#286B50]/20"
                         />
                     </div>
@@ -58,11 +55,7 @@ export default function RegisterPage() {
                             Email
                         </label>
                         <input
-                            required
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                            id="email"
-                            type="email"
+                            required onChange={(e) => setEmail(e.target.value)} value={email} id="email" type="email"
                             className="w-full rounded-lg border border-[#DDE7DF] px-4 py-3 outline-none focus:border-[#286B50] focus:ring-2 focus:ring-[#286B50]/20"
                         />
                     </div>
@@ -72,12 +65,7 @@ export default function RegisterPage() {
                             Contraseña
                         </label>
                         <input
-                            minLength={8}
-                            required
-                            onChange={(e) => setPassword(e.target.value)}
-                            value={password}
-                            id="password"
-                            type="password"
+                            minLength={8} required onChange={(e) => setPassword(e.target.value)} value={password} id="password" type="password"
                             className="w-full rounded-lg border border-[#DDE7DF] px-4 py-3 outline-none focus:border-[#286B50] focus:ring-2 focus:ring-[#286B50]/20"
                         />
                     </div>
@@ -91,7 +79,8 @@ export default function RegisterPage() {
                         className="w-full rounded-lg bg-[#286B50] py-3 font-semibold text-white transition-colors hover:bg-[#173D32] focus:outline-none focus:ring-2 focus:ring-[#286B50] focus:ring-offset-2"
                     >
                         Crear cuenta
-                    </button>
+                    </button>                
+                    <p>¿Ya tienes una cuenta? <Link href="/login" className="text-[#286B50] font-semibold hover:underline">Inicia sesión</Link></p>
                 </form>
             </div>
         </main>
