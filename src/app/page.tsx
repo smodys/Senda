@@ -72,7 +72,7 @@ export default function Home() {
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
-              href="/register"
+              href="/dashboard"
               className="rounded-xl bg-[#286B50] px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-[#286B50]/15 transition hover:-translate-y-0.5 hover:bg-[#1F563F]"
             >
               Registra un nuevo episodio →
