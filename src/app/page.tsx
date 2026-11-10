@@ -87,7 +87,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* DASHBOARD PREVIEW */}
         <div className="relative">
           <div className="absolute -inset-5 rounded-[40px] bg-[#286B50]/5 blur-3xl" />
 
@@ -178,7 +177,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
       <section
         id="features"
         className="border-t border-[#DDE7DF] bg-white px-6 py-24"
@@ -226,7 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="border-t border-[#DDE7DF] px-6 py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-[#83A995] sm:flex-row">
           <span className="font-bold text-[#286B50]">
